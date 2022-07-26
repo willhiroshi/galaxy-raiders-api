@@ -6,8 +6,8 @@ import galaxyraiders.core.physics.Vector2D
 class Explosion(
   initialPosition: Point2D,
   radius: Double,
-  mass: Double
+  mass: Double,
+  var remainingTicks: Int
 ) :
   SpaceObject("Explosion", '*', initialPosition, Vector2D(0.0, 0.0), radius, mass) {
-    var remainingTicks = 10
-  }
+}

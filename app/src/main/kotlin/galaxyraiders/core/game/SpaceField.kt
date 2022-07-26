@@ -84,7 +84,8 @@ data class SpaceField(val width: Int, val height: Int, val generator: RandomGene
     return Explosion(
       initialPosition = asteroid.center,
       radius = asteroid.radius * 2,
-      mass = asteroid.mass * 2
+      mass = asteroid.mass * 2,
+      remainingTicks = 10
     )
   }
 
